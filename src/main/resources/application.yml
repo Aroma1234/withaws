@@ -15,6 +15,11 @@ spring:
   h2:
     console:
       enabled: true
+  profiles:
+    include: oauth
+  session:
+    jdbc:
+      initialize-schema: always
 
 
 logging:
@@ -27,3 +32,5 @@ server:
     encoding:
       force-response: true
 
+
+  # test oauth
